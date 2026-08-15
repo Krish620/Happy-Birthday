@@ -8,7 +8,6 @@ import decoFlowers from '../assets/decorate_flower.png'
 import hat from '../assets/hat.png'
 import smileIcon from '../assets/smiley_icon.png'
 import BookCanvas from "../components/BookCanvas";
-import SmallLetter from "../components/SmallLetter";
 
 const Home = () => {
     // ------------------- Hooks 
@@ -159,11 +158,6 @@ const Home = () => {
 
                 {/* =========================== BoxMail Canvas =============================== */}
                 <BookCanvas active={Active} setActive={SetActive} />
-
-                {/* ========================== Small letter from rajib ========================= */}
-                <section className="smallLetter absolute md:-bottom-26 -bottom-40 md:left-[45%] left-[50%] -translate-x-1/2" style={{ "--t": "15.6s" }}>
-                    <SmallLetter />
-                </section>
             </div>
         </>
     );
